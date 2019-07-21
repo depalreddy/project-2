@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">GENDER</th>
+      <th scope="col">DOB</th>
+      <th scope="col">DEPT</th>
+      <!-- <th scope="col">PHOTO</th> -->
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.id}}</td>
+      <td>{{ employee.name}}</td>
+      <td>{{ employee.email}}</td>
+      <td>{{ employee.gender}}</td>
+      <td>{{ employee.dob}}</td>
+      <td>{{ employee?.dept}}</td>
+      <!-- <td><img [src]="employee.photo"></td> -->
+    </tr>
+
+  </tbody>
+</table>
